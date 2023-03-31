@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Picker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 class="title">Color Picker</h1>
+  <h3 class="instructions">click the square to get started</h2>
+  <div class="container">
+    <div class="color-picker">
+      <!--
+        This is a comment. Comments are not displayed in the browser
+
+        The <input> tag is used to create an input field. The type attribute specifies the type of input field. 
+        By picking "color" as the type, the browser will display a color picker - note we didn't need to build one from scratch!
+
+        When a user picks a color, the input component will fire an "input" event. We can listen for this event and update the color code
+
+        Read more about the <input> tag here: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+
+        and make sure you understand the javascript in the script.js file
+      -->
+      <input type="color" id="color-picker">
+      <div class="color-code">
+        <p id="hex"></p>
+        <p id="rgb"></p>
+        <p id="hsl"></p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
